@@ -27,11 +27,35 @@ const questions = [
         type: 'checkbox',
         name: 'license',
         message: ' What kind if license should your project have? (Check all that apply)',
-        choices: ['MIT', 'Apache', 'GPL', 'BSD', 'ISC']
+        choices: ['MIT', 'GNU GPLv3', 'CC0-1.0,CC-BY-4.0,CC-BY-SA-4.0 ', 'Apache', 'Mozilla']
       },
+      {
+        type: 'input',
+        name:'install',
+        message:'What command should be run to install dependencies?',
+        default:'npm i'
+    },
+    {
+        type: 'input',
+        name:'test',
+        message:'What command should be run to run test?',
+        default:'npm test'
+    },
+    {
+        type: 'input',
+        name:'howTO',
+        message:'What does the user needs to know about using the repo?',
+    },
+    {
+        type: 'input',
+        name:'contributing',
+        message:'What does the user needs to know about contributing to the repo?',
+    },
+   
 
 ];
 inquirer.prompt(questions).then((answers) => {
+    console.log('Generating README...');
     console.log(JSON.stringify(answers, null, '  '));
   });
 
