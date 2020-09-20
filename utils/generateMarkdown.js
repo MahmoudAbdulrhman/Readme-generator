@@ -21,8 +21,6 @@ const writeFile = fileContent =>{
 
 // function to generate markdown for README
 const generateMarkdown = function generateMarkdown(data) {
-  // console.log(data);
-  // console.log(data.title);
   return `
 # Title
 
@@ -32,9 +30,14 @@ ${data.title}
 
 ${data.descroption}
 
-### Table of Contents
+## Table of Contents
 
 - [Description](#description)
+- [Licenses](#licenses)
+- [Installation](#installation)
+- [Test command](#test)
+- [Instructions](#instructions)
+- [Contributing](#contributing)
 
 ## Licenses
 
@@ -58,7 +61,7 @@ ${data.test}
 
 ${data.instructions}
 
-## contributing
+## Contributing
 
 ${data.contributing}
 `
