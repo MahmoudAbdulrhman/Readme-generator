@@ -1,4 +1,6 @@
 const fs = require('fs');
+const blackBlink = [{name:'node.js'}];
+console.log(blackBlink);
 const writeFile = fileContent =>{
   return new Promise((resolve,reject)=>{
       fs.writeFile('./dist/README.MD', fileContent, err => {
@@ -21,9 +23,45 @@ const writeFile = fileContent =>{
 const generateMarkdown = function generateMarkdown(data) {
   // console.log(data);
   // console.log(data.title);
-  return `# ${data.title}
+  return `
+# Title
 
-`;
+${data.title}
+
+## Description
+
+${data.descroption}
+
+### Table of Contents
+
+- [Description](#description)
+
+## Licenses
+
+\`\`\`\${blackBlink.name}
+${data.license}
+\`\`\`
+
+## Installation
+
+\`\`\`\${blackBlink.name}
+${data.install}
+\`\`\`
+
+## Test command
+
+\`\`\`\${blackBlink.name}
+${data.test}
+\`\`\`
+
+## Instructions
+
+${data.instructions}
+
+## contributing
+
+${data.contributing}
+`
 }
 
 module.exports = {writeFile,generateMarkdown};
