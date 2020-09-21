@@ -1,5 +1,5 @@
 
-# Readme
+# readme
 
 ## Table of Contents
 
@@ -12,12 +12,12 @@
 
 ## Description
 
-an app to create a profissinol readme
+an app to create profissinol readme
 
 ## languages
 
 ```${blackBlink.name}
-JAvaScript,node.js
+JAvaScript,ES6,node.js
 ```
 
 ## Licenses
@@ -40,11 +40,11 @@ npm test
 
 ## Instructions
 
-nothing
+no
 
 ## Contributing
 
-nothing
+no
 
 # Questions
 
@@ -52,4 +52,4 @@ If you have any questions or concerns, please feel free to reach out to my:
 
 Email: [mahmoudtheeb@gmail.com](mahmoudtheeb@gmail.com)
 
-Github: [mahmoudabdulrhman](https://github.com/undefined)
+Github: [mahmoudAbdulhman](https://github.com/undefined)
