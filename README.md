@@ -7,7 +7,7 @@ Just provide a series of information and you are good to go!
 
 In order to get to the generator questionnaire, you must first download the repository 'readme-generator' by clicking the GitHub link under the Questions section.
 
-Once the repository is cloned, use your terminal to initiate the command 'node index.js.'  A series of questions will be presented to you.  After completing the questionnaire,
+Once the repository is cloned, use your terminal to initiate the command 'npm install' in order to make the app run then enter the command 'node index.js.'  A series of questions will be presented to you.  After completing the questionnaire,
 a message that says 'File created!; will show up as a confirmation that the readme file has been created.  The generated README.MD will be located in the distribution folder (dist).
 Open your new README.MD, click the top-right 'Open to Preview' button and voila!
 
