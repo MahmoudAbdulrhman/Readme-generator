@@ -24,10 +24,6 @@ const generateMarkdown = function generateMarkdown(data) {
   return `
 # ${data.title}
 
-## Description
-
-${data.descroption}
-
 ## Table of Contents
 
 - [Description](#description)
@@ -36,6 +32,16 @@ ${data.descroption}
 - [Test command](#test)
 - [Instructions](#instructions)
 - [Contributing](#contributing)
+
+## Description
+
+${data.descroption}
+
+## languages
+
+\`\`\`\${blackBlink.name}
+${data.languages}
+\`\`\`
 
 ## Licenses
 
@@ -62,7 +68,16 @@ ${data.instructions}
 ## Contributing
 
 ${data.contributing}
+
+# Questions
+
+If you have any questions or concerns, please feel free to reach out to my:
+
+Email: [${data.email}](${data.email})
+
+Github: [${data.name}](https://github.com/${data.namename})
 `
 }
+
 
 module.exports = {writeFile,generateMarkdown};

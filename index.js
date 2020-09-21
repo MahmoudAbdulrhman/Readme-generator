@@ -9,12 +9,28 @@ const questions = [
     {
         type: 'Input' ,
         name: 'name',
-        message: 'what is your GitHub username?'
+        message: 'what is your GitHub username?',
+        validate: nameInput => {
+            if (nameInput) {
+              return true;
+            } else {
+              console.log('Please enter your UserName!');
+              return false;
+            }
+          }
     },
     {
         type:'input',
         name: 'email',
-        message:'What is your email address?'
+        message:'What is your email address?',
+        validate: nameInput => {
+            if (nameInput) {
+              return true;
+            } else {
+              console.log('Please enter your UserName!');
+              return false;
+            }
+          }
     },
     {
         type: 'input',
@@ -26,6 +42,12 @@ const questions = [
         name:'descroption',
         message:'Please write a short description of your project?'
     },
+    {
+        type: 'checkbox',
+        name: 'languages',
+        message: ' What did you this project with? (Check all that apply)',
+        choices: ['JAvaScript', 'HTML', 'CSS', 'ES6', 'jQuery', 'Bootstrap', 'node.js']
+      },
     { 
         type: 'checkbox',
         name: 'license',
