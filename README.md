@@ -32,5 +32,5 @@ Open your new README.MD, click the top-right 'Open to Preview' button and voila!
 
 ## Screenshot
 
-![Screenshot](assets/images/ssh1.JPG)
+![Screenshot](assets/images/ssh1.jpg)
 ![Screenshot](assets/images/ssh2.jpg)
